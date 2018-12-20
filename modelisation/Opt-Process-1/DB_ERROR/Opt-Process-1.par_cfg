@@ -1,0 +1,5 @@
+# Job Configuration File for SIMULIA Tosca Structure 
+ print "(INFO    ) Reading job configuration file for Opt-Process-1 \n";
+ $fem_modif_add_call = "--format_matrices sim";
+$res2vtm_add_call = "--format_matrices sim";
+${fe_solver_add_call} = "message messaging_mechanism=DIRECT listener_name=FSG-2325-19.fsg.ulaval.ca listener_resource=12032 direct_port=49974 memory=90%";

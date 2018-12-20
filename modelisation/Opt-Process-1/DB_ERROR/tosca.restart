@@ -1,0 +1,387 @@
+%::cf = (
+          'fem2onf_add_call' => ' ',
+          'workdir' => 'U:\\cours\\GMC-4351\\projet_synthese\\synthèse\\modelisation\\Opt-Process-1',
+          'copy_tosca_out_on_success' => 'yes',
+          'temp_inp_ext' => undef,
+          'life2vtm_add_call' => ' ',
+          'tosca_call' => '-job Opt-Process-1 -opt Opt-Process-1.par -solver abaqus -ow -type test1',
+          'tosca_opt' => '"C:/SIMULIA/Tosca/2017/win_b64/code/bin/SMATsoToscaOpt.EXE"',
+          'delete_empty_dirs' => 'yes',
+          'pat3fat_add_call' => undef,
+          'copyright_year' => '2016',
+          'read_add_list_flg' => 0,
+          'opt_sys_short' => 'tosca',
+          'tosca_prep_add_call' => '-i "U:\\cours\\GMC-4351\\projet_synthese\\synthèse\\modelisation\\Opt-Process-1\\Opt-Process-1.par"',
+          'logfile' => 'U:\\cours\\GMC-4351\\projet_synthese\\synthèse\\modelisation\\Opt-Process-1\\TOSCA.OUT',
+          'move_per_iter_list' => [
+                                    [
+                                      'first_last',
+                                      'SAVE.odb',
+                                      'Opt-Process-1-Job.fil',
+                                      undef
+                                    ],
+                                    [
+                                      'first_last',
+                                      'SAVE.odb',
+                                      'Opt-Process-1-Job.odb',
+                                      undef
+                                    ],
+                                    [
+                                      'first_last',
+                                      'SAVE.msg',
+                                      'Opt-Process-1-Job.msg',
+                                      undef
+                                    ],
+                                    [
+                                      'first_last',
+                                      'SAVE.dat',
+                                      'Opt-Process-1-Job.dat',
+                                      undef
+                                    ],
+                                    [
+                                      'first_last',
+                                      'SAVE.sta',
+                                      'Opt-Process-1-Job.sta',
+                                      undef
+                                    ],
+                                    [
+                                      'ever',
+                                      'SAVE.inp',
+                                      'Opt-Process-1-Job.inp',
+                                      '1'
+                                    ],
+                                    [
+                                      'ever',
+                                      'SAVE.inp',
+                                      'Opt-Process-1-Job.inp',
+                                      '1'
+                                    ]
+                                  ],
+          'dos2unix_list' => [
+                               '(.*)\\.par',
+                               '(.*)\\.inp',
+                               '(.*)\\.bdf',
+                               '(.*)\\.dat',
+                               '(.*)\\.uci',
+                               '(.*)\\.cdb',
+                               '(.*)\\.nas'
+                             ],
+          'startdir' => 'U:/cours/GMC-4351/projet_synthese/synthèse/modelisation',
+          'current_module' => 'SIMULIA Tosca Structure.control',
+          'child_log_file' => {
+                                'SMATsoFemInclude.EXE' => {}
+                              },
+          'authorization_log_file' => 'authorization.log',
+          'start_time' => 1545258684,
+          'authorization_log' => [],
+          'fem_modif' => '"C:/SIMULIA/Tosca/2017/win_b64/code/bin/SMATsoFemModif.EXE"',
+          'include_search_path' => [
+                                     'C:/SIMULIA/Tosca/2017/win_b64/SMATsoResources/macros',
+                                     'C:/SIMULIA/Tosca/2017/win_b64/mscnastran/macros'
+                                   ],
+          'vert_line' => ' -------------------------------------------------------------------------- ',
+          'morph_merge_ext' => [
+                                 '.csv',
+                                 '.conf',
+                                 '.tab'
+                               ],
+          'diff_time' => '00:00:00',
+          'model_list' => [
+                            'Opt-Process-1-Job.inp'
+                          ],
+          'fem2onf' => '"C:/SIMULIA/Tosca/2017/win_b64/code/bin/SMATsoFemToOnf.EXE"',
+          'jobdir' => 'U:/cours/GMC-4351/projet_synthese/synthèse/modelisation',
+          'life_solver_add_call' => undef,
+          'tstruct_str_short' => 'tosca',
+          'res2vtm' => '"C:/SIMULIA/Tosca/2017/win_b64/code/bin/SMATsoOdbToVtmMain.EXE"',
+          'tm' => '17:31:24',
+          'tstruct_str' => 'SIMULIA Tosca Structure',
+          'tosca_arguments' => '-job Opt-Process-1 -opt Opt-Process-1.par -solver abaqus -ow -type test1 ',
+          'print_tosca_includes' => 'no',
+          'includelist' => [
+                             'U:/cours/GMC-4351/projet_synthese/synthèse/modelisation/Opt-Process-1.par',
+                             'U:\\cours\\GMC-4351\\projet_synthese\\synthèse\\modelisation\\Opt-Process-1-Job.inp',
+                             'Opt-Process-1-Job.inp',
+                             'Opt-Process-1.par_cfg'
+                           ],
+          'temp_flg' => 0,
+          'move_after_opt_list' => [
+                                     [
+                                       'TOSCA_POST',
+                                       '*.els.*',
+                                       '*.nod.*',
+                                       '*.grp*',
+                                       '*.out_iso*',
+                                       '*.out_fem*',
+                                       'TOSCA.OUT',
+                                       '*.txt',
+                                       '*.neu',
+                                       '*.conf',
+                                       '*.tab',
+                                       'RSO_OUTPUT*.TXT',
+                                       'NX_DEFORM_ORG*.DAT',
+                                       'NX_DEFORM_MOD*.DAT'
+                                     ],
+                                     [
+                                       'SAVE.wrl',
+                                       '*.WRL',
+                                       '*.wrl'
+                                     ],
+                                     [
+                                       'SAVE.html',
+                                       '*.html',
+                                       '*.HTML'
+                                     ],
+                                     [
+                                       'SAVE.onf',
+                                       '*SHAPE*.onf',
+                                       '*BEAD*.onf',
+                                       'TP*.onf',
+                                       'GROUPS.onf',
+                                       'TP_GROUPS.onf',
+                                       '*_fem.onf',
+                                       'MODEL_*.onf'
+                                     ],
+                                     [
+                                       'SAVE.stl',
+                                       '*.stl',
+                                       '*.STL'
+                                     ]
+                                   ],
+          'fe_solver_exe' => '"C:/Program Files/Dassault Systemes/SimulationServices/V6R2017x/win_b64/code/bin/SMALauncher.exe"',
+          'fe_solver' => 'abaqus',
+          'fem_include_add_call' => ' ',
+          'solver_output_names' => {
+                                     'ansys' => 'Ansys',
+                                     'mscnastran' => 'MSC.Nastran',
+                                     'permas' => 'Permas',
+                                     'mdnastran_desktop' => 'MD.Nastran Desktop',
+                                     'nxnastran_desktop' => 'NX Nastran - Desktop',
+                                     'marc' => 'MSC.Marc',
+                                     'abaqus' => 'Abaqus',
+                                     'nxnastran' => 'NX Nastran'
+                                   },
+          'fem_modif_add_call' => '--format_matrices sim',
+          'tosca_report' => '"C:/SIMULIA/Tosca/2017/win_b64/code/bin/SMATrtReportMain.EXE"',
+          'tosca_prep' => '"C:/SIMULIA/Tosca/2017/win_b64/code/bin/SMATsoToscaPrep.EXE"',
+          'res2vtm_add_call' => '--format_matrices sim',
+          'killscripts' => {
+                             'abaqus' => 'C:/Program Files/Dassault Systemes/SimulationServices/V6R2017x/win_b64/code/bin/SMALauncher.exe job=__FE_MODEL__ terminate'
+                           },
+          'onf_to_sim_start_file' => 'ONF_TO_SIM_START_FILE.txt',
+          'loglevel_stdout' => 'NOTICE',
+          'check_ansys_filename_length' => 'yes',
+          'tosca_smooth_cycle' => 'last',
+          'tosca_report_add_files' => '.*\\.conf|.*\\.tab|./DB_ERROR/.*\\.conf|./DB_ERROR/.*\\.tab|./TOSCA_POST/.*\\.conf|./TOSCA_POST/.*\\.tab',
+          'move_per_iter_xxx_list' => [
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'SHAPE_???.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'SHAPE_SENS_???.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'TP_???.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'TP_SENS_???.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'SIZING_???.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'SIZING_SENS_???.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'BEAD_???.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'BEAD_SENS_???.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'MODEL_???.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'MODEL_fem.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'TEST_SHAPE_*.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'TEST_BEAD_*.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.onf',
+                                          'GROUPS_*.onf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.vtf',
+                                          '*_???_*.vtf',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.wrl',
+                                          '*_???.wrl',
+                                          undef
+                                        ],
+                                        [
+                                          'ever',
+                                          'SAVE.wrl',
+                                          '*_???.WRL',
+                                          undef
+                                        ]
+                                      ],
+          'workdir_chmod' => 'yes',
+          'opt_sys' => 'SIMULIA Tosca Structure',
+          'fe_check_file' => '__FE_MODEL__.msg',
+          'opt_type' => 'test1',
+          'fe2fes_add_call' => undef,
+          'tosca_smooth' => '"C:/SIMULIA/Tosca/2017/win_b64/code/bin/SMATrtTStructSmoothMain.EXE"',
+          'jobname' => 'Opt-Process-1',
+          'modelname' => 'Opt-Process-1-Job',
+          'tosca_bin' => 'C:/SIMULIA/Tosca/2017/win_b64/bin',
+          'life_solver_exe_hsh' => {},
+          'life_solver_result_flg' => 'calc',
+          'mbs_solver_result_flg' => 'calc',
+          'fe_solver_add_call' => 'message messaging_mechanism=DIRECT listener_name=FSG-2325-19.fsg.ulaval.ca listener_resource=12032 direct_port=49974 memory=90%',
+          'os' => 'MSWin32',
+          'tosca_opt_add_call' => ' ',
+          'solver_include_list' => [
+                                     'Opt-Process-1-Job.inp'
+                                   ],
+          'end_time' => 1545258684,
+          'tosca_smooth_add_call' => ' ',
+          'akt_filelist' => [
+                              'Opt-Process-1-Job.inp',
+                              'Opt-Process-1.par',
+                              'Opt-Process-1.par_cfg',
+                              'TOSCA.OUT',
+                              'TOSCA_POST'
+                            ],
+          'flatten_abaqus_input' => 'yes',
+          'ask_before_delete' => 'no',
+          'parname' => 'U:/cours/GMC-4351/projet_synthese/synthèse/modelisation/Opt-Process-1',
+          'loglevels_exes' => undef,
+          'iter' => 0,
+          'fatigue_submit_add_call' => undef,
+          'stderr_enabled' => 0,
+          'loglevels' => {},
+          'delete_after_opt_list' => [
+                                       '*.log*',
+                                       '*.tmp',
+                                       '*.mac',
+                                       '*.onf',
+                                       'tosca.restart',
+                                       'STOP_DAT.CAO',
+                                       '*.par_cfg',
+                                       'optimization_*.vtm',
+                                       'optimization_database.idx',
+                                       '*.emat'
+                                     ],
+          'TOSCA_RUNTIME_CHANGE_CONFIG' => 'TOSCA_RUNTIME_CHANGE_CONFIG',
+          'opt_ext' => 'par',
+          'temp_solver_result_flg' => 'calc',
+          'onf_to_sim_cycle' => 'last',
+          'onf_dir' => 'SAVE.onf',
+          'temp_modelname' => undef,
+          'tosca_report_start_file' => 'TOSCA_REPORT_START_FILE.txt',
+          'onf_to_sim_add_call' => undef,
+          'fe_check_type' => 'succeeded',
+          'post_overwrite' => 'yes',
+          'tosca_version' => '3DEXPERIENCE R2017x',
+          'life_list_flg' => 0,
+          'post_file_replacements' => {
+                                        '__JOBNAME__' => '$jobname'
+                                      },
+          'fe_solver_cmdline' => 'job=__FE_MODEL__ analysis interactive -resultsFormat ODB',
+          'xml_input' => 'no',
+          'execute_as_perl_ext' => 'do_not_execute_as_perl',
+          'res_ext' => 'odb',
+          'dt' => '19.12.2018',
+          'loglevel' => 'INFO',
+          'cpu_times_for_exes' => {
+                                    'SMATsoFemInclude.EXE' => [
+                                                                0
+                                                              ]
+                                  },
+          'tosca_start_time' => 1545258684,
+          'tosca' => 'C:/SIMULIA/Tosca/2017/win_b64',
+          'overwrite' => 1,
+          'tosca_report_add_call' => '',
+          'fe_check_string' => 'THE ANALYSIS HAS BEEN COMPLETED',
+          'FED_OMP_NUM_THREADS_ENV' => 'FED_OMP_NUM_THREADS',
+          'restart' => 0,
+          'model_list_flg' => 0,
+          'fem_include' => '"C:/SIMULIA/Tosca/2017/win_b64/code/bin/SMATsoFemInclude.EXE"',
+          'allow_absolute_include_paths' => 'no',
+          'fe_solver_exe_hsh' => {},
+          'inp_ext' => 'inp',
+          'tosca_smooth_start_file' => 'TOSCA_SMOOTH_START_FILE.txt',
+          'parfile' => 'Opt-Process-1.par',
+          'abaqus_datacheck' => 'yes',
+          'copy_solver_info_list' => [
+                                       [
+                                         'ever',
+                                         'SAVE.inp',
+                                         'Opt-Process-1-Job.inp',
+                                         1
+                                       ],
+                                       [
+                                         'ever',
+                                         'SAVE.inp',
+                                         'Opt-Process-1-Job.inp'
+                                       ]
+                                     ],
+          'modelfile' => 'Opt-Process-1-Job.inp',
+          'tosca_report_cycle' => 'last',
+          'delete_per_iter_list' => [
+                                      'up_*.odb',
+                                      '*.com',
+                                      'Opt-Process-1-Job.dat',
+                                      'Opt-Process-1-Job.prt',
+                                      'Opt-Process-1-Job.sta',
+                                      'Opt-Process-1-Job.msg'
+                                    ],
+          'fe_solver_result_flg' => 'calc',
+          'post_dirname' => 'TOSCA_POST'
+        );
